@@ -1,0 +1,169 @@
+/* Base styles */
+
+html {
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: lightgrey;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    section {
+        text-align: center;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 38px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: #222222;
+        color: white;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+    }
+}
+
+// Project styles
+
+.container {
+    min-height: 100vh;
+    width: 85vw;
+    text-align: center;
+    p{
+        text-align: left;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.flex--center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-half {
+    width: 50%;
+}
+
+.flex-third {
+    width: 33.33333%;
+    padding: 15px;
+}
+
+.flex-two-thirds{
+    width: 66.666666%;
+    padding: 15px;
+}
+
+// Animation keyframes
+
+.fade-in {
+    position: relative;
+    img {
+        position: relative;
+        opacity: 0;
+        left: -100px;
+        z-index:2;
+    }
+    &:after {
+        content:'';
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: -100px;
+        opacity: 0;
+        height: 190px;
+        width: 190px;
+        border-radius: 100%;
+        background-color: salmon;
+        z-index:1;
+    }
+}
+
+.fade-in--left.active:after {
+    animation-name: fade-in--left;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+
+
+.fade-in--left.active img {
+    animation-name: fade-in--left;
+    animation-duration: .725s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in--left {
+    0% {
+      left: -100px;
+      opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
