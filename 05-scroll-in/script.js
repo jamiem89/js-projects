@@ -16,14 +16,6 @@ const elementInView = (el, dividend = 1) => {
   );
 };
 
-function elementOutofView(el) {
-  const elementTop = el.getBoundingClientRect().top;
-
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  );
-};
-
 function displayScrollElement(element){
   element.classList.add("active");
 };
