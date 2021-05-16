@@ -13,7 +13,6 @@ function createGrid(size){
         let opacity = Math.floor(Math.random() * (99 - 10 + 1) + 10);
         el.style.opacity = `0.${opacity}`;
         grid.appendChild(el);
-        console.log(opacity);
     }
     let els = grid.querySelectorAll('div');
     fluctuate(els);
