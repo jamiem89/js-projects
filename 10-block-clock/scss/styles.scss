@@ -1,0 +1,132 @@
+/* Base styles */
+
+html {
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    section {
+        text-align: center;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 38px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #222222;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: #222222;
+        color: white;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+    }
+}
+
+// Clock styling
+
+$colorSeconds: rgb(255,231,76);
+$colorSecondsOp: rgba(255,231,76,0.5);
+$colorMinutes: rgb(255,89,100);
+$colorMinutesOp: rgba(255,89,100,0.5);
+$colorHours: rgb(56,97,140);
+$colorHoursOp: rgba(56,97,140,0.5);
+
+.hours,
+.minutes,
+.seconds {
+    display: flex;
+    width: 100vw;
+    height: 33.33333vh;
+    align-items: flex-end;
+}
+
+.hours {
+    background-color: $colorHoursOp;
+    span {
+        transform-origin: bottom left;
+        width: calc(100% / 12);
+        height: 0%;
+        background-color: $colorHours;
+    }
+}
+
+.minutes {
+    background-color: $colorMinutesOp;
+    span {
+        transform-origin: bottom left;
+        width: calc(100% / 59);
+        height: 0%;
+        background-color: $colorMinutes;
+    }
+}
+
+.seconds {
+    background-color: $colorSecondsOp;
+    span {
+        transform-origin: bottom left;
+        width: calc(100% / 59);
+        height: 0%;
+        background-color: $colorSeconds;
+    }
+}
+
+span.dinged {
+    height: 100%;
+    transition: all .4s ease-in;
+}
