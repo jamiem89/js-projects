@@ -1,0 +1,210 @@
+/* Base styles */
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  position: relative;
+  font-size: 16px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #333333;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container section {
+  text-align: center;
+}
+
+.container section:first-child {
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 38px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.like {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background: transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.like svg {
+  fill: none;
+  height: 95%;
+}
+
+.like svg path {
+  fill: none;
+  stroke-width: 5;
+  stroke: white;
+}
+
+.like:hover {
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+}
+
+.like.active {
+  -webkit-animation-name: heart-animation;
+          animation-name: heart-animation;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-timing-function: cubic-bezier(0.52, -0.29, 0.55, 1.32);
+          animation-timing-function: cubic-bezier(0.52, -0.29, 0.55, 1.32);
+}
+
+.like.active:before, .like.active:after {
+  content: '';
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 100%;
+  border: 2px solid #1AE884;
+  -webkit-animation-name: heart-pulse;
+          animation-name: heart-pulse;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 0.88, 0.98);
+          animation-timing-function: cubic-bezier(0, 1, 0.88, 0.98);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.like.active:before {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.like.active:hover {
+  height: 40px;
+  width: 40px;
+}
+
+.like.active svg path {
+  stroke: #1AE884;
+  fill: #1AE884;
+}
+
+@-webkit-keyframes heart-animation {
+  0% {
+    width: 40px;
+    height: 40px;
+  }
+  50% {
+    width: 55px;
+    height: 55px;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@keyframes heart-animation {
+  0% {
+    width: 40px;
+    height: 40px;
+  }
+  50% {
+    width: 55px;
+    height: 55px;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@-webkit-keyframes heart-pulse {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    height: 120px;
+    width: 120px;
+    opacity: 0;
+  }
+}
+
+@keyframes heart-pulse {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    height: 120px;
+    width: 120px;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
