@@ -1,0 +1,147 @@
+/* Base styles */
+
+html {
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Renogare';
+    src: url('../fonts/renogaresoft-regular-webfont.woff2') format('woff2'),
+         url('../fonts/renogaresoft-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Renogare', 'Arial', sans-serif;
+    letter-spacing: -.025em;
+    color: #D4D1D2;
+    background: rgb(52,30,53);
+    background: radial-gradient(circle, rgba(52,30,53,1) 11%, rgba(20,22,57,1) 100%);
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    section {
+        text-align: center;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 38px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #222222;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: #222222;
+        color: white;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+    }
+}
+
+// Particle styling / effects
+
+h1 {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.particle {
+    position: absolute;
+    border-radius: 100%;
+    background: rgba(255,255,255,.05);
+}
+
+.fade-in {
+    animation: fade-in .75s cubic-bezier(0,.52,.5,1);
+}
+
+.fade-out {
+    animation: fade-out .75s cubic-bezier(.34,.01,1,.65);
+}
+
+// Animations
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+};
