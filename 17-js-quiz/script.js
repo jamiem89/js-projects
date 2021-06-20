@@ -26,55 +26,105 @@ let categories = [];
 // temporary questions
 const allQuestions = [
     {
-        question: 'What year was WP first introduced?',
-        answerOne: '1992',
-        answerTwo: '2000',
-        answerThree: '2003',
-        answerFour: '1999',
-        correct: 2,
-        category: 'wordpress'
-
-    },
-    {
-        question: 'WordPress is a CMS',
-        answerOne: 'true',
-        answerTwo: 'no',
-        answerThree: 'false',
-        answerFour: 'yes',
+        question: 'Where is speed freak Guy Martin form?',
+        answerOne: 'Grimsby',
+        answerTwo: 'Scunthorpe',
+        answerThree: 'Hull',
+        answerFour: 'Doncaster',
         correct: 1,
-        category: 'wordpress'
+        category: 'Famous Guys'
 
     },
     {
-        question: 'Is wordpress a pain in the arse?',
-        answerOne: 'yes',
-        answerTwo: 'of course',
-        answerThree: 'worse than that',
-        answerFour: 'the worst thing ever',
+        question: 'Which of this bands is lead by a Guy?',
+        answerOne: 'Hot Chip',
+        answerTwo: 'The Hold Steady',
+        answerThree: 'Knee',
+        answerFour: 'Elbow',
         correct: 4,
-        category: 'wordpress'
+        category: 'Famous Guys'
 
     },
     {
-        question: 'Mario or Luigi',
-        answerOne: 'mairo',
-        answerTwo: 'mario',
-        answerThree: 'looga',
-        answerFour: 'luigi',
+        question: 'Guy Fawkes gunpowder plot was in which year?',
+        answerOne: '1922',
+        answerTwo: '1402',
+        answerThree: '1605',
+        answerFour: '1801',
+        correct: 3,
+        category: 'Famous Guys'
+
+    },
+    {
+        question: 'Guy Ritchie directed which of these films?',
+        answerOne: 'Snatch',
+        answerTwo: 'Toy Story',
+        answerThree: 'Chock, Block and Two Smoking Squirrels',
+        answerFour: 'The Emoji Movie',
+        correct: 1,
+        category: 'Famous Guys'
+
+    },
+    {
+        question: 'Guy Fieri is the mayor of which town?',
+        answerOne: 'Funky Town',
+        answerTwo: 'Sunny Town',
+        answerThree: 'Boggy Bottom',
+        answerFour: 'Flavor Town',
+        correct: 4,
+        category: 'Famous Guys'
+
+    },
+    {
+        question: `Mark Zuckerberg is jokingly rumoured to be what?`,
+        answerOne: 'Facebook Tom',
+        answerTwo: 'A privacy enthusiast',
+        answerThree: 'A nice bloke',
+        answerFour: 'A robot',
+        correct: 4,
+        category: 'Famous Marks'
+
+    },
+    {
+        question: 'Marc Marquez is a world champion, what?',
+        answerOne: 'Olympic gymnast',
+        answerTwo: 'Card shuffler',
+        answerThree: 'Moto GP rider',
+        answerFour: 'Air guitarist',
+        correct: 3,
+        category: 'Famous Marks'
+
+    },
+    {
+        question: 'Mark ____ is a member of Dire Straits?',
+        answerOne: 'Nibbler',
+        answerTwo: 'Knopfler',
+        answerThree: 'Gobbler',
+        answerFour: 'Tropflor',
         correct: 2,
-        category: 'nintendo'
+        category: 'Famous Marks'
 
     },
     {
-        question: `What's yer name?`,
-        answerOne: 'gregg',
-        answerTwo: 'roy',
-        answerThree: 'guy',
-        answerFour: 'aldo',
-        correct: 4,
-        category: 'general'
+        question: 'Mark Bolan is a?',
+        answerOne: 'T Rex',
+        answerTwo: 'French delicacy',
+        answerThree: 'Sovereign state',
+        answerFour: 'Aardvark',
+        correct: 1,
+        category: 'Famous Marks'
 
-    }
+    },
+    {
+        question: 'Mark Twain, famous for writing?',
+        answerOne: 'Katie Price: Reborn',
+        answerTwo: 'JavaScript for Designers',
+        answerThree: 'Fear and Loathing in Las Vegas',
+        answerFour: 'Huckleberry Finn',
+        correct: 4,
+        category: 'Famous Marks'
+
+    },
 ];
 
 // Grab categories and create buttons for each
