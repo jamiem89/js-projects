@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <main class="quiz">
+
+            <section class="section quiz__intro" id="introContainer">
+
+                <h1>Hey there, pick a category to get started:</h1>
+
+            </section>
+
+            <section class="section quiz__container inactive" id="quizContainer">
+
+                <div class="quiz__question" id="questionContainer">
+                </div>
+
+                <div class="quiz__buttons" id="answerContainer">
+                    <button class="btn" id="quizButtonOne" data-answer="1"></button>
+                    <button class="btn" id="quizButtonTwo" data-answer="2"></button>
+                    <button class="btn" id="quizButtonThree" data-answer="3"></button>
+                    <button class="btn" id="quizButtonFour" data-answer="4"></button>
+                </div>
+
+            </section>
+
+            <section class="quiz__outro inactive" id="outroContainer">
+                <h3 class="h2">You scored: <span id="scoreTotal"></span> out of <span id="scorePoss"></span></h3>
+                <button class="btn" id="quizButtonRestart">Start again?</button>
+            </section>
+
+        </main>
+
+        <script src="./script.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+.quiz {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1565C0, #b92b27);
+    background: linear-gradient(to bottom, #1565C0, #b92b27);
+}
+
+.quiz__question {
+    position: relative;
+    min-height: 40px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    h2 {
+        position: absolute;
+        width: 100%;
+    }
+}
