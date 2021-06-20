@@ -26,7 +26,7 @@ let categories = [];
 // temporary questions
 const allQuestions = [
     {
-        question: 'Where is speed freak Guy Martin form?',
+        question: 'Where is speed freak Guy Martin from?',
         answerOne: 'Grimsby',
         answerTwo: 'Scunthorpe',
         answerThree: 'Hull',
@@ -36,7 +36,7 @@ const allQuestions = [
 
     },
     {
-        question: 'Which of this bands is lead by a Guy?',
+        question: 'Which of these bands is led by a Guy?',
         answerOne: 'Hot Chip',
         answerTwo: 'The Hold Steady',
         answerThree: 'Knee',
@@ -46,7 +46,7 @@ const allQuestions = [
 
     },
     {
-        question: 'Guy Fawkes gunpowder plot was in which year?',
+        question: 'The Guy Fawkes gunpowder plot was in which year?',
         answerOne: '1922',
         answerTwo: '1402',
         answerThree: '1605',
@@ -77,7 +77,7 @@ const allQuestions = [
     },
     {
         question: `Mark Zuckerberg is jokingly rumoured to be what?`,
-        answerOne: 'Facebook Tom',
+        answerOne: 'Myspace Tom',
         answerTwo: 'A privacy enthusiast',
         answerThree: 'A nice bloke',
         answerFour: 'A robot',
@@ -106,7 +106,7 @@ const allQuestions = [
 
     },
     {
-        question: 'Mark Bolan is a?',
+        question: 'Mark Bolan is a ___?',
         answerOne: 'T Rex',
         answerTwo: 'French delicacy',
         answerThree: 'Sovereign state',
@@ -116,7 +116,7 @@ const allQuestions = [
 
     },
     {
-        question: 'Mark Twain, famous for writing?',
+        question: 'Mark Twain is famous for writing ___?',
         answerOne: 'Katie Price: Reborn',
         answerTwo: 'JavaScript for Designers',
         answerThree: 'Fear and Loathing in Las Vegas',
