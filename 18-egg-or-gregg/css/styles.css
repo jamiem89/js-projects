@@ -1,0 +1,231 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Bowlby One SC", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Base styles */
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  position: relative;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #F8F4F0;
+  color: #444648;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  padding: 0px 20px;
+  width: 100%;
+}
+
+@media (min-width: 40em) {
+  .container {
+    width: 100%;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game__header {
+  text-align: center;
+}
+
+.game__area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.game__item {
+  height: 130px;
+  width: calc(50% - 20px);
+  border-bottom: 7px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.game__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.game__mole {
+  display: block;
+  border-top: 100%;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game__mole[data-type="egg"] {
+  background-image: url(../img/egg.png);
+}
+
+.game__mole.cracked[data-type="egg"] {
+  background-image: url(../img/egg--cracked.png);
+}
+
+.game__mole[data-type="gregg"] {
+  background-image: url(../img/gregg.png);
+}
+
+.game__footer {
+  text-align: center;
+}
+
+.pop-up {
+  -webkit-animation: pop-up cubic-bezier(0.21, 0.71, 0.66, 1.24);
+          animation: pop-up cubic-bezier(0.21, 0.71, 0.66, 1.24);
+  -webkit-animation-duration: .22s;
+          animation-duration: .22s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pop-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+.pop-down {
+  -webkit-animation: pop-down cubic-bezier(0.33, -0.34, 1, 0.77);
+          animation: pop-down cubic-bezier(0.33, -0.34, 1, 0.77);
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pop-down {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes pop-down {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.border-green {
+  border-color: #1B3814;
+}
+
+.border-green--light {
+  border-color: #479015;
+}
+
+.border-orange {
+  border-color: #F99406;
+}
+
+.border-red {
+  border-color: #DC2A05;
+}
+
+.border-blue {
+  border-color: #0A91FC;
+}
+
+.border-purple {
+  border-color: #053ACC;
+}
+
+.background-green {
+  background-color: #1B3814;
+}
+
+.background-green--light {
+  background-color: #479015;
+}
+
+.background-orange {
+  background-color: #F99406;
+}
+
+.background-red {
+  background-color: #DC2A05;
+}
+
+.background-blue {
+  background-color: #0A91FC;
+}
+
+.background-purple {
+  background-color: #053ACC;
+}
+/*# sourceMappingURL=styles.css.map */

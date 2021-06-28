@@ -1,0 +1,48 @@
+.game__header {
+    text-align: center;
+}
+
+.game__area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.game__item {
+    height: 130px;
+    width: calc(50% - 20px);
+    border-bottom: 7px solid;
+    position: relative;
+    overflow: hidden;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.game__mole {
+    display: block;
+    border-top: 100%;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game__mole[data-type="egg"] {
+    background-image: url(../img/egg.png);
+}
+
+.game__mole.cracked[data-type="egg"] {
+    background-image: url(../img/egg--cracked.png);
+}
+
+.game__mole[data-type="gregg"] {
+    background-image: url(../img/gregg.png);
+}
+
+.game__footer {
+    text-align: center;
+}
